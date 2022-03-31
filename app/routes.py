@@ -1,7 +1,9 @@
 from flask import render_template, request
 from app import myobj
+
 name = 'Lisa'
 city_names = ['Paris', 'London', 'Rome', 'Tahiti']
+
 @myobj.route("/", methods =["GET", "POST"])
 def home():
     # if request.method == "POST":
