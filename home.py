@@ -13,8 +13,8 @@ def home():
     return f'''
         <html>
         <body>
-                <h1>Welcome {name}!</h1>
-                <a href={("www.google.com")}>not google</a>
+                <h1>Welcome {name}!</h1><br>
+                <a href="www.google.com">notgoogle</a><br>
                 <ul>
                     {city}<br>
                 </ul>
