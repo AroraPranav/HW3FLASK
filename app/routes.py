@@ -1,10 +1,9 @@
 from flask import render_template, request
 from app import myobj
-
+name = 'Lisa'
+city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 @myobj.route("/", methods =["GET", "POST"])
 def home():
-    name = 'Lisa'
-    city_names = ['Paris', 'London', 'Rome', 'Tahiti']
     # if request.method == "POST":
     #     name = request.form.get("cname")
     #     return f'''<li>{name}</li>''' 
