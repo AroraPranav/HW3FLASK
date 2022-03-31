@@ -4,7 +4,7 @@ myobj = Flask(__name__)
 
 name = 'Lisa'
 city_names = ['Paris', 'London', 'Rome', 'Tahiti']
-city = ""
+
 
 @myobj.route("/")
 def home():
