@@ -1,5 +1,5 @@
 from flask import Flask
 
 myobj = Flask(__name__)
-myobj.config.from_mapping(SECRET_KEY = 'you-will-never-guess')
+myobj.config.from_mapping(SECRET_KEY = 'That-is-the-key')
 from app import routes
