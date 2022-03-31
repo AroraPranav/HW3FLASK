@@ -1,7 +1,7 @@
 from flask import render_template, request
-from app import app
+from app import myobj
 
-@app.route("/", methods =["GET", "POST"])
+@myobj.route("/", methods =["GET", "POST"])
 def home():
     name = 'Lisa'
     city_names = ['Paris', 'London', 'Rome', 'Tahiti']

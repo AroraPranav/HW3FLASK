@@ -1,8 +1,6 @@
-
-
 from flask import Flask
-app = Flask(__name__)
-@app.route("/")
+myobj = Flask(__name__)
+@myobj.route("/")
 def home():
     name = 'Lisa'
     city_names = ['Paris', 'London', 'Rome', 'Tahiti']
