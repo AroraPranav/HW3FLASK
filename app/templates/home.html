@@ -2,7 +2,7 @@
 <body>
     <ul>
         {%if request.method =="POST"%}
-            <li>{{added}}</li>
+            <li>{{added}}</li><br>
         {%endif%}
     </ul>
     
@@ -17,7 +17,7 @@
         {%endfor%}
     </ul>
     
-    <form method="post"><br>
+    <form action="" method="POST"><br>
         <label for="cname">City Name</label><br><br>
         <input type="text" id="cname" name="cname" maxlength="32"><br><br>
         <input type="submit">
