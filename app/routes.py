@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
-from flask import flash, redirect, render_template, request
+from flask import flash, redirect, render_template
 from app import myobj
 
 name = 'Lisa'
