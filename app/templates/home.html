@@ -1,6 +1,7 @@
+<!--Discussed the homework problems with @BhagyeshRathi and @PranavPandey-->
 <!DOCTYPE html>
 <body>
-    
+    <!-- This part was taught in the slides. -->
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul>
@@ -13,12 +14,12 @@
 
     <h1>Welcome {{name}}!</h1>
     <a href="www.google.com">not google</a>
-
     <ul>
         {%for i in city_names %}
         <li>{{i}}</li>
         {%endfor%}
     </ul>
+    <!-- Modified the code from the slides -->
     <form action="" method="POST" >
         {{ form.hidden_tag() }}
         <p>
@@ -27,6 +28,5 @@
         </p>
         <p>{{ form.submit() }}</p>
     </form>
-    
 </body>
 </html>
