@@ -16,9 +16,7 @@
 
     <ul>
         {%for i in city_names %}
-        <li>
-            {{i}}
-        </li>
+        <li>{{i}}</li>
         {%endfor%}
     </ul>
     <form action="" method="POST" >
@@ -29,10 +27,6 @@
         </p>
         <p>{{ form.submit() }}</p>
     </form>
-    <!-- <form action="" method="POST"><br>
-        <label for="cname">City Name</label><br><br>
-        <input type="text" id="cname" name="cname" maxlength="32"><br><br>
-        <input type="submit" id ="" value="submit">
-    </form> -->
+    
 </body>
 </html>
