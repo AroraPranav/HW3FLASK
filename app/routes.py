@@ -4,8 +4,7 @@ from wtforms.validators import DataRequired
 from flask import flash, redirect, render_template, request
 from app import myobj
 
-name = 'Lisa'
-city_names = ['Paris', 'London', 'Rome', 'Tahiti']
+
 
 class Submit(FlaskForm):
     city = StringField('City Name', validators=[DataRequired()])
@@ -13,7 +12,8 @@ class Submit(FlaskForm):
 
 @myobj.route("/", methods =["GET", "POST"])
 def home():
-    
+    name = 'Lisa'
+    city_names = ['Paris', 'London', 'Rome', 'Tahiti']
     form = Submit()
     if form.validate_on_submit():
         flash(format(form.city.data))
